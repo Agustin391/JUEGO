@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Misterio del Cuarto Amarillo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>El Misterio del Cuarto Amarillo</h1>
+        <p id="description">Bienvenido al castillo de Glandier. Investiga el misterio del cuarto amarillo.</p>
+
+        <div id="scene">
+            <img id="sceneImage" src="castillo.png" alt="Castillo">
+        </div>
+
+        <div id="controls">
+            <button onclick="cambiarEscena('cuartoAmarillo')">Ir al Cuarto Amarillo</button>
+            <button onclick="cambiarEscena('biblioteca')">Ir a la Biblioteca</button>
+            <button onclick="cambiarEscena('jardin')">Ir al Jardín</button>
+            <button onclick="cambiarEscena('sotano')">Ir al Sótano</button>
+            <button onclick="cambiarEscena('salaComedor')">Ir a la Sala de Comedor</button>
+            <button onclick="cambiarEscena('despachoSecreto')">Ir al Despacho Secreto</button>
+        </div>
+
+        <div id="actions">
+            <button onclick="investigar()">Investigar</button>
+            <button onclick="hablarConSospechoso()">Hablar con sospechoso</button>
+            <button onclick="usarObjeto()">Usar Objeto</button>
+            <button onclick="resolverCaso()">Resolver el caso</button>
+        </div>
+
+        <div id="pistas">
+            <h3>Pistas y Objetos recolectados</h3>
+            <ul id="pistasList"></ul>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
